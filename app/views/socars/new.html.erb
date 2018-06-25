@@ -1,0 +1,6 @@
+<h1>Socars#new</h1>
+<%=form_tag("/socars") do%>
+    <%=text_field_tag(:title)%><br><br>
+    <%=text_area_tag(:contents)%><br><br>
+    <%=submit_tag("작성하기")%><br>
+<%end%>

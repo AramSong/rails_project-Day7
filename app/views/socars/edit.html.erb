@@ -1,0 +1,6 @@
+<h1>Socars#edit</h1>
+<%=form_tag("/socars/#{@socar.id}",method:"patch") do%>
+    <%=text_field_tag(:title,@socar.title)%>
+    <%=text_area_tag(:contents,@socar.contents)%>
+    <%=submit_tag("수정하기")%>
+<%end%>

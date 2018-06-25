@@ -1,0 +1,5 @@
+<%=form_tag("/posts") do %>
+    <%=text_field_tag(:title)%><br><br>
+    <%=text_area_tag(:contents)%><br>
+    <%=submit_tag("작성하기")%>
+<%end%>
